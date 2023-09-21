@@ -1,0 +1,128 @@
+/* GUSCODE - PORTAFOLIO */
+
+:root {
+  /* paleta de colores - 5 colores */
+  --color-1: hsla(211, 53%, 11%, 1);   /* titulos - acentos */
+  --color-2: hsla(219, 37%, 17%, 1);   /* subtitulos - acentos */
+  --color-3: hsla(212, 29%, 36%, 1);   /* botones */
+  --color-4: hsla(214, 23%, 56%, 1);   /* botones */
+  --color-5: hsla(75, 6%, 87%, 1);     /* fondos */
+
+  /* fuentes - 2 fuentes */
+  --fuente-1: 'Fira Code', monospace;
+  --fuente-2: 'Inter', sans-serif;
+
+  /* estilos generales */ 
+  --margen-1: 30px;
+  --margen-2: 15px;
+  --margen-titulo: 50px 30px 5px 30px;
+  --margen-subtitulo: 20px 30px 5px 30px;
+  --ancho-medio: 50%;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+h1 {
+  display: inline-block;
+  font-family: var(--fuente-1);
+  color: var(--color-1); 
+  margin: var(--margen-titulo);
+}
+
+
+h3 {
+  display: inline-block;
+  font-family: var(--fuente-2);
+  color: var(--color-1);
+  margin: var(--margen-subtitulo);
+}
+
+
+p {
+  font-family: var(--fuente-2);
+  margin: var(--margen-1);
+}
+
+
+/* iconos */
+.ph {
+  display: inline;
+  font-size: 2.5em;
+}
+
+
+/* Sección de Portada */
+.portada {
+  display: flex;
+  margin: var(--margen-1);
+  height: 75vh;
+}
+
+
+.portada-foto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: var(--ancho-medio);
+  height: 100%;
+}
+
+
+.portada-texto {
+  display: inline-block;
+  background-color: var(--color-5);
+  width: var(--ancho-medio);
+  height: 100%;
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none !important;
+  margin-top: var(--margen-2);
+  padding: 0;
+  
+}
+
+
+.menu li {
+  padding: 1em;
+}
+
+
+.menu li a {
+  font-family: var(--fuente-2);
+  text-decoration: none;
+  color: var(--color-1);
+}
+
+
+
+/* Sección de Proyectos */
+.proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  height: 150vh;
+  width: 95%;
+  padding: 5px;
+  margin: var(--margen-1);
+}
+
+
+.proyectos-caja {}
+
+
+.imagen {
+  background-color: var(--color-5);
+}
+
+
+.descripcion {
+  background-color: var(--color-4);
+}
