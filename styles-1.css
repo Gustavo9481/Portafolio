@@ -1,0 +1,261 @@
+/* GUSCODE - PORTAFOLIO */
+
+:root {
+  /* paleta de colores - 5 colores */
+  --color-1: hsla(0, 0%, 10%, 1);      /* titulos - acentos */
+  --color-2: hsla(219, 37%, 17%, 1);   /* subtitulos - acentos */
+  --color-3: hsla(212, 29%, 36%, 1);   /* botones */
+  --color-4: hsla(242, 69%, 67%, 1);   /* botones */
+  --color-5: hsla(75, 6%, 87%, 1);     /* fondos */
+
+  /* fuentes - 2 fuentes */
+  --fuente-1: 'Fira Code', monospace;
+  --fuente-2: 'Inter', sans-serif;
+
+  /* estilos generales */ 
+  --margen-1: 40px;
+  --margen-2: 15px;
+  --margen-texto: 10px 40px 10px 40px;
+  --margen-titulo: 50px 30px 5px 30px;
+  --margen-subtitulo: 20px 30px 5px 30px;
+  --ancho-medio: 50%;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1, h3 {
+  font-family: var(--fuente-1);
+  color: var(--color-1);
+  margin: var(--margen-texto);
+}
+
+p {
+  font-family: var(--fuente-2);
+  color: var(--color-1);
+  margin: var(--margen-texto);
+}
+
+
+.menu-up {
+  background-color: var(--color-4);
+  display: flex;
+  justify-content: right;
+  list-style-type: none !important;
+  margin-top: var(--margen-2);
+  margin-right: var(--margen-2);
+  padding: 0;  
+}
+
+
+.menu-bottom {
+  display: flex;
+  justify-content: center;
+  list-style-type: none !important;
+  margin-top: var(--margen-2);
+  padding: 0;  
+}
+
+
+.menu-redes1 {
+  display: flex;
+  list-style-type: none !important;
+}
+
+li {
+  padding: 1em;
+}
+
+
+li a {
+  font-family: var(--fuente-2);
+  text-decoration: none;
+  color: var(--color-1);
+}
+
+
+
+
+
+
+/* ------------------------------ Nuevo Portafolio */
+
+/* iconos */
+.ph {
+  display: inline;
+  font-size: 2.5em;
+}
+
+
+/* ------------------------------ Encabezado */
+.container-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.avatar {
+  /*filter: brightness(80%) sepia(1) hue-rotate(30deg);*/
+  /*filter: hue-rotate(55deg);*/
+  border-radius: 50%;
+  margin: auto;
+  height: 300px;
+  box-shadow: 3px 3px 15px 3px lightgrey;
+}
+
+
+.container-titulo {
+  /*background-color: green;*/
+  text-align: center;
+}
+
+
+/* ------------------------------ Acerca de mi */
+.container-resumen {
+  /*background-color: red;*/
+}
+
+
+/* ------------------------------ Proyectos */
+.container-proyectos {
+  /*background-color: blue;*/
+}
+
+.proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  height: 150vh;
+  width: 95%;
+  padding: 5px;
+  margin: var(--margen-1);
+}
+
+
+.proyectos-caja {
+  position: relative;
+}
+
+
+.imagen {
+  position: absolute;
+  background-color: var(--color-5);
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  margin: auto;
+}
+
+
+.descripcion {}
+
+/* ------------------------------ Currículo */
+.container-curriculo {
+  /*background-color: green;*/
+}
+
+
+
+
+/* VIEJO PROYECTO */
+
+.portada {
+  display: flex;
+  margin: var(--margen-1);
+  height: 75vh;
+}
+
+
+.portada-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--ancho-medio);
+  height: 100%;
+}
+
+
+
+.portada-texto {
+  display: inline-block;
+  background-color: var(--color-5);
+  width: var(--ancho-medio);
+  height: 100%;
+}
+
+
+/* Prueba de proyectos */
+
+.contenedor-imagenes {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen {
+  width: 22%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 3 0 grey;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  height: 0;
+  transition: 1s ease;
+  overflow: hidden;
+}
+
+@media screen and (max-width:1000px){
+  .contenedor-imagenes { 
+    width: 95%; 
+  }
+}
+
+@media screen and (max-width:700px){
+  .contenedor-imagenes { 
+    width: 90%; 
+  }
+
+  .contenedor-imagenes .imagen { 
+    width: 48%; 
+  }
+}
+
+@media screen and (max-width:450px){
+  .contenedor-imagenes {
+    width: 98%;
+  }
+
+  .contenedor-imagenes .imagen {
+    width: 80%;
+  }
+}

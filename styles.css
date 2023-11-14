@@ -1,198 +1,264 @@
-/* GUSCODE - PORTAFOLIO */
+/* GUScode - Portafolio */
 
 :root {
-  /* paleta de colores - 5 colores */
-  --color-1: hsla(0, 0%, 10%, 1);      /* titulos - acentos */
-  --color-2: hsla(219, 37%, 17%, 1);   /* subtitulos - acentos */
-  --color-3: hsla(212, 29%, 36%, 1);   /* botones */
-  --color-4: hsla(242, 69%, 67%, 1);   /* botones */
-  --color-5: hsla(75, 6%, 87%, 1);     /* fondos */
+    /* Paleta de colores */
+    --azul: #5A96C8;
+    --violeta: #A181D7;
+    --beige: #9E8F77;
+    --verde: #5BA056;
+    --rojo: #EB6757;
+    --amarillo: #AF8D27;
+    --naranja: #E2720D;
+    --celeste: #508EFE;
+    --ceruleo: #5791E6;
+    --body: #282b32;
+    --panel: #212327;
+    --task: #e3d664;
 
-  /* fuentes - 2 fuentes */
-  --fuente-1: 'Fira Code', monospace;
-  --fuente-2: 'Inter', sans-serif;
 
-  /* estilos generales */ 
-  --margen-1: 40px;
-  --margen-2: 15px;
-  --margen-texto: 10px 40px 10px 40px;
-  --margen-titulo: 50px 30px 5px 30px;
-  --margen-subtitulo: 20px 30px 5px 30px;
-  --ancho-medio: 50%;
+  
+    /* fuentes - 2 fuentes */
+    --fuente-1: 'Open Sans', sans-serif;
+  
+    /* estilos generales */ 
+    --margen-1: 40px;
+    --margen-2: 15px;
+    --margen-texto: 10px 40px 10px 40px;
+    --margen-titulo: 50px 30px 5px 30px;
+    --margen-subtitulo: 20px 30px 5px 30px;
+    --ancho-medio: 50%;
 }
-
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+    font-family: var(--fuente-1);
+    color: azure;
 }
 
-
-h1, h3 {
-  font-family: var(--fuente-1);
-  color: var(--color-1);
-  margin: var(--margen-texto);
+body {
+    background-color: var(--body);
 }
 
-p {
-  font-family: var(--fuente-2);
-  color: var(--color-1);
-  margin: var(--margen-texto);
-}
-
-
-.menu-up {
-  background-color: var(--color-4);
-  display: flex;
-  justify-content: right;
-  list-style-type: none !important;
-  margin-top: var(--margen-2);
-  margin-right: var(--margen-2);
-  padding: 0;  
-}
-
-
-.menu-bottom {
-  display: flex;
-  justify-content: center;
-  list-style-type: none !important;
-  margin-top: var(--margen-2);
-  padding: 0;  
-}
-
-
-.menu-redes {
-  display: flex;
-  justify-content: center;
-  list-style-type: none !important;
-  margin-top: var(--margen-2);
-  margin-bottom: var(--margen-2);
-  padding: 0;  
-}
-
-li {
-  padding: 1em;
-}
-
-
-li a {
-  font-family: var(--fuente-2);
-  text-decoration: none;
-  color: var(--color-1);
+.linea {
+    width: 100%;
+    height: 5px;
+    background-color: var(--panel);
 }
 
 
 
+.panel {
+    background-color: var(--panel);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px; /* Ajusta el ancho según tus necesidades */
+    height: 100%;
+    overflow: auto; /* Permite el desplazamiento si el contenido es más largo que la pantalla */
+}
+
+.panel-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+    
+.panel-box-avatar {
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    height: 150px;
+}
+
+.panel-box-menu {
+    display: block;
+    margin: auto;
+    list-style-type: none;
+}
+
+.panel-box-menu ul {
+    list-style-type: none;
+    padding-left: 0;   
+}
+
+ul li {
+    padding-bottom: 7px;
+}
+
+a {
+    text-decoration: none;
+}
 
 
+/* --------------------------------------------------------- Sección | Inicio */
 
-/* ------------------------------ Nuevo Portafolio */
+.inicio {
+    margin-left: 260px;
+    margin-top: 11%;
+    height: 85vh;
+}
 
-/* iconos */
+.inicio h1 {
+    font-size: 4em;
+}
+
+.inicio button {
+    background-color: var(--ceruleo);
+    margin-top: 5%;
+    padding: 5px;
+    color: var(--panel);
+    border-radius: 5px;
+    border: none;
+
+}
+
+.inicio-redes {
+    margin: 40px auto auto auto;
+    list-style-type: none;
+}
+
+
+.inicio-redes-lista {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.inicio-redes-lista li {
+    padding-right: 10px;
+}
+
 .ph {
-  display: inline;
-  font-size: 2.5em;
+    font-size: 2em;
+    padding-right: 10px;
 }
 
-
-/* ------------------------------ Encabezado */
-.container-avatar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.ph-github-logo {
+    color: var(--violeta);
 }
 
-
-.avatar {
-  filter: brightness(80%) sepia(1) hue-rotate(30deg);
-  /*filter: hue-rotate(55deg);*/
-  border-radius: 50%;
-  margin: auto;
-  height: 300px;
-  box-shadow: 3px 3px 15px 3px lightgrey;
+.ph-whatsapp-logo {
+    color: var(--verde);
 }
 
-
-.container-titulo {
-  /*background-color: green;*/
-  text-align: center;
+.ph-instagram-logo {
+    color: var(--rojo);
 }
 
-
-/* ------------------------------ Acerca de mi */
-.container-resumen {
-  /*background-color: red;*/
+.ph-linkedin-logo {
+    color: var(--amarillo);
 }
 
+/* ------------------------------------------------------ Sección | Proyectos */
 
-/* ------------------------------ Proyectos */
-.container-proyectos {
-  /*background-color: blue;*/
-}
 
 .proyectos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  height: 150vh;
-  width: 95%;
-  padding: 5px;
-  margin: var(--margen-1);
+    margin-left: 260px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-
-.proyectos-caja {
-  position: relative;
+.contenedor-imagenes {
+    display: flex;
+    width: 85%;
+    margin: auto !important;
+    margin-left: 260px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+  
+.contenedor-imagenes .imagen {
+    width: 45%;
+    position: relative;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 0 0 3 0 grey;
+}
+  
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--panel);
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
 }
 
-
-.imagen {
-  position: absolute;
-  background-color: var(--color-5);
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50%;
-  margin: auto;
+.overlay-content {
+    margin: 50px 5px 5px 5px;
+    text-align: center;
 }
 
-
-.descripcion {}
-
-/* ------------------------------ Currículo */
-.container-curriculo {
-  /*background-color: green;*/
+.task {
+    color: var(--task);
 }
 
-
-
-
-/* VIEJO PROYECTO */
-
-.portada {
-  display: flex;
-  margin: var(--margen-1);
-  height: 75vh;
+.ph-check-circle {
+    font-size: 0.9em;
 }
 
+/* ----------------------------- Media Querys | Proyectos */
 
-.portada-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: var(--ancho-medio);
-  height: 100%;
+@media screen and (max-width:1000px){
+    .contenedor-imagenes { 
+      width: 95%; 
+    }
+}
+  
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes { 
+      width: 90%; 
+    }
+  
+    .contenedor-imagenes .imagen { 
+      width: 48%; 
+    }
 }
 
-
-
-.portada-texto {
-  display: inline-block;
-  background-color: var(--color-5);
-  width: var(--ancho-medio);
-  height: 100%;
+  
+@media screen and (max-width:450px){
+    .contenedor-imagenes {
+      width: 98%;
+    }
+  
+    .contenedor-imagenes .imagen {
+      width: 80%;
+    }
 }
 
+/* ------------------------------------------------- Sección | Capacitaciones */
 
+.capacitaciones {
+    margin-left: 260px;
+    margin-top: 50px;
+}
+
+.capacitaciones-item {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.small {
+    font-size: 0.7em;
+}
