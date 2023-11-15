@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- -------------------------------------------------- GUScode | Portafolio -->
 <html lang="es">
     <head>
         <meta charset="utf-8">
@@ -13,10 +14,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
         <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+        <script src="Jquery/jquery-1.6.3.min.js"></script>
     </head>
 
     <body>
-
+        
 <!-- ------------------------------------------------------- Sección | Panel -->
         <header class="panel">
             <div class="panel-box">
@@ -25,36 +27,50 @@
                 </figure>
                 <nav class="panel-box-menu">
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#capacitaciones">Capacitaciones</a></li>
-                        <li>Skills</li>
-                        <li>Contacto</li>
+                        <li><a href="#inicio" class="menu">Inicio</a></li>
+                        <li><a href="#proyectos" class="menu">Proyectos</a></li>
+                        <li><a href="#capacitaciones" class="menu">Capacitaciones</a></li>
+                        <li><a href="#skills" class="menu">Skills</a></li>
+                        <li><a href="#contacto" class="menu">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
+            
         </header>
 
 <!-- ------------------------------------------------------ Sección | Inicio -->
         <div id="inicio"></div>
-        <section class="inicio">
+        <section class="section-box">
             <h1>Gustavo Colmenares</h1>
-            <p>GUScode | Programador Full Stack</p>
+            <h3 class="cursor">GUScode | Programador Full Stack</h3>
+            <p>Hola, soy Gustavo Colmenares, un administrador graduado con más de 15 años de experiencia en el sector de la tecnología. 
+                <br>Entusiasta del aprendizaje autodidacta. 
+                <br>Me gusta crear proyectos personales que me permitan aplicar lo que aprendo y resolver problemas reales o imaginarios. 
+                <br>Espero que te guste mi trabajo y que te animes a contactarme si tienes alguna propuesta o sugerencia. 
+                </p>
             <h3>Portafolio de proyectos</h3>
             <a href="Gustavo Colmenares-CV.pdf" target="_blank" download><button>Descargar CV</button></a>
             <nav class="inicio-redes">
                 <ul class="inicio-redes-lista">
-                  <li><a><i class="ph ph-github-logo"></i></a></li>
-                  <li><a href="https://wa.me/573123078150" target="_blank"><i class="ph ph-whatsapp-logo"></i></a></li>
-                  <li><a><i class="ph ph-instagram-logo"></i></a></li>
-                  <li><a><i class="ph ph-linkedin-logo"></i></a></li>
+                  <li><button class="boton-redes">
+                    <a href="https://github.com/Gustavo9481" target="_blank"><i class="ph ph-github-logo"></i></a>
+                  </button></li>
+                  <li><button class="boton-redes">
+                    <a href="https://wa.me/573123078150" target="_blank"><i class="ph ph-whatsapp-logo"></i></a>
+                  </button></li>
+                  <li><button class="boton-redes">
+                    <a><i class="ph ph-instagram-logo"></i></a>
+                  </button></li>
+                  <li><button class="boton-redes">
+                    <a><i class="ph ph-linkedin-logo"></i></a>
+                  </button></li>
                 </ul>
             </nav>
         </section>
 
 <!-- --------------------------------------------------- Sección | Proyectos -->
         <div id="proyectos" class="linea"></div>
-        <section class="proyectos">
+        <section class="section-box">
             <h2>Proyectos</h2>
             
             <div class="contenedor-imagenes">
@@ -97,7 +113,7 @@
 
 <!-- ---------------------------------------------- Sección | Capacitaciones -->
         <div id="capacitaciones" class="linea"></div>
-        <section class="capacitaciones">
+        <section class="section-box">
             <h2>Capacitaciones</h2>
             <div class="capacitaciones-item">
                 <h3>Python Tutorizado <span class="small">| 130hrs</span></h3>
@@ -116,10 +132,56 @@
             </div>
             
         </section>
+<!-- ------------------------------------------------------ Sección | Skills -->
+        <div id="skills" class="linea"></div> 
+        <section class="section-box">
+            <h2>Skills</h2>
+            <div class="skills-lista">
+            <h3 class="skills-titles">Lenguajes de programación</h3>
+            <div class="skills-lenguajes">
+                <figure class="imagen-logo"><img src="imagenes/python.svg" alt="logo python" ></figure>
+                <figure class="imagen-logo"><img src="imagenes/html-5.svg" alt="logo html"></figure>
+                <figure class="imagen-logo"><img src="imagenes/css-3.svg" alt="logo css"></figure>
+                <figure class="imagen-logo"><img src="imagenes/bash-icon.svg" alt="logo bash"></figure>
+            </div>
 
+            </br>
+            <h3 class="skills-titles">Frameworks</h3>
+            <div class="skills-frameworks">
+                <figure class="imagen-logo"><img src="imagenes/django-icon.svg" alt="logo django" ></figure>
+                <figure class="imagen-logo"><img src="imagenes/flask.svg" alt="logo flask"></figure>
+            </div>
 
+            </br>
+            <h3 class="skills-titles">Software o Herramientas</h3>
+            <div class="skills-herramientas">
+                <figure class="imagen-logo"><img src="imagenes/visual-studio-code.svg" alt="logo vscode"></figure>
+                <figure class="imagen-logo"><img src="imagenes/neovimio-icon.svg" alt="logo neovim"></figure>
+                <figure class="imagen-logo"><img src="imagenes/notion-icon.svg" alt="logo notion"></figure>
+                <figure class="imagen-logo"><img src="imagenes/git-icon.svg" alt="logo git"></figure>
+                <figure class="imagen-logo"><img src="imagenes/github-icon.svg" alt="logo github"></figure>
+                <figure class="imagen-logo"><img src="imagenes/sqlite.svg" alt="logo github"></figure>
+            </div>
+
+            </br>
+            <h3 class="skills-titles">En proceso de aprendizaje</h3>
+            <div class="skills-lenguajes">
+                <figure class="imagen-logo"><img src="imagenes/javascript.svg" alt="logo javascript"></figure>
+                <figure class="imagen-logo"><img src="imagenes/flutter.svg" alt="logo neovim"></figure>
+                <figure class="imagen-logo"><img src="imagenes/react.svg" alt="logo notion"></figure>
+            </div>
+            </div>
+
+        </section>
+        <script src="index.js"></script>
     </body>
 
-    <footer></footer>
+<!-- ---------------------------------------------------- Sección | Contacto -->
+    <div id="contacto" class="linea"></div>
+    <footer class="section-box">
+        <h2>Contacto</h2>
+        <p>email:     guscode.apps@gmail.com</p>
+        <p>teléfono:  +57 312-807-2150</p>
+    </footer>
 
 </html>
