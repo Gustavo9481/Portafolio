@@ -249,8 +249,18 @@ button {
     color: var(--task);
 }
 
+.usuario {
+    color: var(--ceruleo);
+}
+
+.django {
+    color: var(--verde);
+}
+
 .ph-check-circle,
-.ph-calculator {
+.ph-calculator,
+.ph-user-circle,
+.bxl-django {
     font-size: 0.9em;
 }
 
