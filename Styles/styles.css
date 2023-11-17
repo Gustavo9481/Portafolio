@@ -15,18 +15,8 @@
     --panel: #212327;
     --task: #e3d664;
 
-
-  
     /* fuentes - 2 fuentes */
-    --fuente-1: 'Open Sans', sans-serif;
-  
-    /* estilos generales */ 
-    --margen-1: 40px;
-    --margen-2: 15px;
-    --margen-texto: 10px 40px 10px 40px;
-    --margen-titulo: 50px 30px 5px 30px;
-    --margen-subtitulo: 20px 30px 5px 30px;
-    --ancho-medio: 50%;
+    --fuente-1: 'Open Sans', sans-serif; 
 }
 
 * {
@@ -42,14 +32,26 @@ body {
     background-color: var(--body);
 }
 
+
+
+a {
+    text-decoration: none;
+}
+
+/* Líneas de separación entre secciones */
 .linea {
     width: 100%;
     height: 5px;
     background-color: var(--panel);
 }
 
+/* Contenedores de Secciones */
+.section-box {
+    margin: 70px 0 70px 260px; 
+}
 
 
+/* ------------------------------------------------------------ Panel Lateral */
 .panel {
     background-color: var(--panel);
     display: flex;
@@ -58,9 +60,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 230px; /* Ajusta el ancho según tus necesidades */
+    width: 230px; 
     height: 100%;
-    overflow: auto; /* Permite el desplazamiento si el contenido es más largo que la pantalla */
+    /*overflow: auto;*/ 
 }
 
 .panel-box {
@@ -77,6 +79,7 @@ body {
     display: block;
     border-radius: 50%;
     margin: auto;
+    width: 150px;;
     height: 150px;
 }
 
@@ -91,7 +94,11 @@ body {
     padding-left: 0;   
 }
 
-.menu {
+.panel-box-menu ul li {
+    padding-bottom: 7px;
+}
+
+.panel-box-menu ul li a {
     font-size: 1em;
 }
 
@@ -101,37 +108,18 @@ body {
 
 
 
-ul li {
-    padding-bottom: 7px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.section-box {
-    margin: 70px 0 70px 260px; 
-}
 /* --------------------------------------------------------- Sección | Inicio */
 
-.inicio {
-    margin-left: 260px;
-    margin-top: 11%;
-    height: 85vh;
-}
-
-h1 {
+.inicio-titulo {
     font-size: 4em;
-    margin-top: 2.5em;
+    margin-top: 2.3em;
 }
-
-.cursor {
+.inicio-cursor {
     color: var(--amarillo);
     display:block;
     white-space: nowrap;
     border-right: 4px solid;
     width: 32ch;
-
     animation: typing 3s steps(32), blink .5s infinite step-end alternate;
     overflow: hidden;
 }
@@ -199,11 +187,12 @@ button {
 }
 
 .ph-linkedin-logo {
-    color: var(--amarillo);
+    color: var(--ceruleo);
 }
 
-/* ------------------------------------------------------ Sección | Proyectos */
 
+
+/* ------------------------------------------------------ Sección | Proyectos */
 
 .proyectos {
     margin-left: 260px;
@@ -260,8 +249,27 @@ button {
     color: var(--task);
 }
 
-.ph-check-circle {
+.ph-check-circle,
+.ph-calculator {
     font-size: 0.9em;
+}
+
+.etiqueta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    height: 30%;
+}
+
+.etiqueta img {
+    height: 25px;
+    object-fit: fill;
+}
+
+.github {
+    margin-top: 15px;
 }
 
 /* ----------------------------- Media Querys | Proyectos */
@@ -294,12 +302,9 @@ button {
     }
 }
 
-/* ------------------------------------------------- Sección | Capacitaciones */
 
-.capacitaciones {
-    margin-left: 260px;
-    margin-top: 50px;
-}
+
+/* ------------------------------------------------- Sección | Capacitaciones */
 
 .capacitaciones-item {
     margin-top: 3em;
@@ -311,13 +316,8 @@ button {
 }
 
 
-/* --------------------------------------------------------- Sección | Skills */
 
-.skills {
-    margin-left: 260px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
+/* --------------------------------------------------------- Sección | Skills */
 
 .skills-lista {
     margin-left: 10%;
@@ -344,8 +344,6 @@ button {
     width: 60%;
     flex-wrap: wrap;
 }
-
-
 
 .skills-lenguajes .imagen-logo {
     position: relative;
@@ -374,11 +372,8 @@ button {
 
 
 
-
 /* ------------------------------------------------------- Sección | Contacto */
 
-.contacto {
-    margin-left: 260px;
-    margin-top: 50px;
-    margin-bottom: 70px;
+span {
+    background-color: var(--body);
 }

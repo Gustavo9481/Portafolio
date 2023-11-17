@@ -9,11 +9,10 @@
         <link rel="icon" href="imagenes/icono.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="Styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
-        <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
         <script src="Scripts/Jquery/jquery-1.6.3.min.js"></script>
     </head>
 
@@ -41,8 +40,8 @@
 <!-- ------------------------------------------------------ Sección | Inicio -->
         <div id="inicio"></div>
         <section class="section-box">
-            <h1>Gustavo Colmenares</h1>
-            <h3 class="cursor">GUScode | Programador Full Stack</h3>
+            <h1 class="inicio-titulo">Gustavo Colmenares</h1>
+            <h3 class="inicio-cursor">GUScode | Programador Full Stack</h3>
             <p>Hola, soy Gustavo Colmenares, un administrador graduado con más de 15 años de experiencia en el sector de la tecnología. 
                 <br>Entusiasta del aprendizaje autodidacta. 
                 <br>Me gusta crear proyectos personales que me permitan aplicar lo que aprendo y resolver problemas reales o imaginarios. 
@@ -62,7 +61,7 @@
                     <a><i class="ph ph-instagram-logo"></i></a>
                   </button></li>
                   <li><button class="boton-redes">
-                    <a><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/gustavo-colmenares-zarache-b141b58b/" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
                   </button></li>
                 </ul>
             </nav>
@@ -83,9 +82,17 @@
                             <p class="task">Aplicación de Lista de Tareas, 
                                 elaborada en lenguaje Python y una interfaz simple en Tkinter</p>
                             </br>
-                            <a href="https://github.com/Gustavo9481/TASK" target="_blank">
-                                <i class="ph ph-github-logo"></i>
-                            </a>
+                            <div class="etiqueta">
+                                <img src="imagenes/Logos/python.svg" alt="Logo python">
+                                <img src="imagenes/Logos/sqlite.svg" alt="Logo sqlite">
+                            </div>
+                            <div class="github">
+                                <button class="boton-redes">
+                                    <a href="https://github.com/Gustavo9481/TASK">
+                                        <i class="ph ph-github-logo"></i>
+                                    </a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </figure>
@@ -93,7 +100,24 @@
 
                 <figure class="imagen">
                     <img src="imagenes/Proyectos/Calculadora_Py.png" alt="foto calculadora">
-                    <div class="overlay"><h3>GUScode</h3></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h2>Calculadora Python <i class="ph ph-calculator"></i></h2>
+                            <p>Una aplicación clásica de calculadora. 
+                                </br>Muy útil para aprender y aplicar conceptos básicos de programación</p>
+                            </br>
+                            <div class="etiqueta">
+                                <img src="imagenes/Logos/python.svg" alt="Logo python">
+                            </div>
+                            <div class="github">
+                                <button class="boton-redes">
+                                    <a href="https://github.com/Gustavo9481/Calculadora_Py.git">
+                                        <i class="ph ph-github-logo"></i>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </figure>
         
 
@@ -180,8 +204,8 @@
     <div id="contacto" class="linea"></div>
     <footer class="section-box">
         <h2>Contacto</h2>
-        <p>email:     guscode.apps@gmail.com</p>
-        <p>teléfono:  +57 312-807-2150</p>
+        <p>email ➡️ <a href="mailto:guscode.apps@gmail.com?subject=Portafolio" target="_blank">guscode.apps@gmail.com</a></p>
+        <p>teléfono ➡️  <span>+57 312-807-2150</span></p>
     </footer>
 
 </html>
