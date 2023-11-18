@@ -70,7 +70,6 @@ a { text-decoration: none; }
     margin: 0;
     justify-content: center;
     align-items: center;
-    background-color: var(--panel);
     height: 160px;
 }
 
