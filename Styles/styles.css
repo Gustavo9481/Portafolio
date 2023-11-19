@@ -454,6 +454,10 @@ span {
       height: fit-content;
     }
 
+    .overlay-content {
+        margin: 25px 5px 5px 5px;
+    }
+
     /* ------------------------------------- Sección | Skills */
     .linea-2 {
         width: 100%;
