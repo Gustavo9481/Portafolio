@@ -1,17 +1,11 @@
 /* ----------------------------------------------------- GUScode | Portafolio */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/Styles/fuentes/OpenSans.ttf') format('ttf');
+}
 
 :root {
     /* Paleta de colores */
-    --azul: #5A96C8;
-    --violeta: #A181D7;
-    --beige: #9E8F77;
-    --verde: #5BA056;
-    --rojo: #EB6757;
-    --amarillo: #AF8D27;
-    --naranja: #E2720D;
-    --celeste: #508EFE;
-    --ceruleo: #5791E6;
-
     --salmon: hsla(14, 88%, 80%, 1);
     --yellow: hsla(53, 82%, 69%, 1);
     --green: hsla(75, 55%, 60%, 1);
@@ -31,15 +25,9 @@
     color: var(--fuente);
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
-body {
-    background-color: var(--body);
-}
-
-
+body { background-color: var(--body); }
 
 a { text-decoration: none; }
 
@@ -47,8 +35,8 @@ a { text-decoration: none; }
 .azul { color: var(--cyan); }
 .salmon { color: var(--salmon); }
 .verde { color: var(--green); }
-.amarillo { color: var(--yellow); }
 .violeta { color: var(--purple); }
+.c_panel { color: var(--panel);}
 
 /* Líneas de separación entre secciones */
 .linea {
@@ -90,7 +78,6 @@ a { text-decoration: none; }
     left: 0;
     width: 230px; 
     height: 100%;
-    /*overflow: auto;*/ 
 }
 
 .panel-box {
@@ -140,6 +127,7 @@ a { text-decoration: none; }
 
 .inicio-titulo {
     font-size: 4em;
+    font-weight: 400;
     margin-top: 2.3em;
 }
 .inicio-cursor {
@@ -149,6 +137,7 @@ a { text-decoration: none; }
     width: 32ch;
     animation: typing 3s steps(32), blink .5s infinite step-end alternate;
     overflow: hidden;
+    color: var(--yellow);
 }
 
 @keyframes typing {
@@ -169,6 +158,34 @@ button {
     border: none;
 
 }
+
+.curriculo {
+    display:inline-block;
+    background-color: var(--cyan);
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+    vertical-align: middle;
+    color: var(--body);
+}
+
+.curriculo .ph {
+    vertical-align: text-bottom;
+    color: var(--body);
+}
+
+.curriculo:hover {
+    background-color: var(--panel);
+    color: var(--cyan);
+}
+
+.curriculo:hover .ph {
+    color: var(--cyan);
+}
+
 
 .inicio-redes {
     margin: 40px auto 15% auto;
@@ -247,7 +264,7 @@ button {
 .imagen img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
   
 .imagen:hover .overlay {
@@ -357,6 +374,7 @@ button {
   
     .contenedor-imagenes .imagen {
       width: 80%;
+      height: fit-content;
     }
 
 }
@@ -424,15 +442,37 @@ button {
 
 
 .imagen-logo img {
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
 
-
+.imagen-logo img:hover {
+    filter: drop-shadow(2px 2px 4px var(--fuente));
+}
 
 /* ------------------------------------------------------- Sección | Contacto */
 
 span {
     background-color: var(--body);
 }
+
+.etiqueta {
+    position: absolute;
+    top: -30px; /* Ajusta la posición vertical de la etiqueta */
+    left: 50%; /* Ajusta la posición horizontal de la etiqueta */
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .imagen-logo img:hover .etiqueta {
+    opacity: 1;
+    visibility: visible;
+  }

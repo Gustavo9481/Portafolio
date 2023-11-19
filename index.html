@@ -11,9 +11,6 @@
         <link rel="stylesheet" type="text/css" href="Styles/styles.css">
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <script src="Scripts/Jquery/jquery-1.6.3.min.js"></script>
     </head>
 
@@ -46,14 +43,18 @@
         <div id="inicio"></div>
         <section class="section-box">
             <h1 class="inicio-titulo">Gustavo Colmenares</h1>
-            <h3 class="inicio-cursor amarillo">GUScode | Programador Full Stack</h3>
+            <h3 class="inicio-cursor">GUScode | Programador Full Stack</h3>
             <p>Hola, soy Gustavo Colmenares, un administrador graduado con más de 15 años de experiencia en el sector de la tecnología. 
                 <br>Entusiasta del aprendizaje autodidacta. 
                 <br>Me gusta crear proyectos personales que me permitan aplicar lo que aprendo y resolver problemas reales o imaginarios. 
                 <br>Espero que te guste mi trabajo y que te animes a contactarme si tienes alguna propuesta o sugerencia. 
                 </p>
             <h3>Portafolio de proyectos</h3>
-            <a href="Documents/Gustavo Colmenares-CV.pdf" target="_blank" download><button>Descargar CV</button></a>
+            <div >
+                <a href="Documents/Gustavo Colmenares-CV.pdf" target="_blank" download class="curriculo">
+                    Descargar CV <i class="ph ph-arrow-circle-down"></i></a>
+            </div>
+            
             <nav class="inicio-redes">
                 <ul class="inicio-redes-lista">
                   <li><button class="boton-redes">
@@ -80,7 +81,7 @@
             <div class="contenedor-imagenes">
                 
                 <figure class="imagen">
-                    <img src="imagenes/Proyectos/foto_app.png" alt="foto de app task">
+                    <img src="imagenes/Proyectos/Task_proyecto.webp" alt="foto de app task">
                     <div class="overlay">
                         <div class="overlay-content">
                             <h2 class="task">Task <i class="ph ph-check-circle task"></i></h2>
@@ -104,7 +105,7 @@
             
 
                 <figure class="imagen">
-                    <img src="imagenes/Proyectos/Calculadora_Py.png" alt="foto app calculadora">
+                    <img src="imagenes/Proyectos/Calculadora_proyecto.webp" alt="foto app calculadora">
                     <div class="overlay">
                         <div class="overlay-content">
                             <h2>Calculadora Python <i class="ph ph-calculator"></i></h2>
@@ -127,7 +128,7 @@
         
 
                 <figure class="imagen">
-                    <img src="imagenes/Proyectos/usuario.png" alt="foto app Login">
+                    <img src="imagenes/Proyectos/login.webp" alt="foto app Login">
                     <div class="overlay">
                         <div class="overlay-content">
                             <h2 class="usuario">Login de Usuario <i class="ph ph-user-circle-plus usuario"></i></h2>
@@ -154,7 +155,7 @@
          
 
                 <figure class="imagen">
-                    <img src="imagenes/Proyectos/portada.webp" alt="foto app pendiente">
+                    <img src="imagenes/Proyectos/Gestor.webp" alt="foto app pendiente">
                     <div class="overlay">
                         <div class="overlay-content">
                             <h2 class="django">Gestor de Django <i class="bx bxl-django django"></i></h2>
@@ -215,7 +216,7 @@
             <div class="skills-lista">
             <h3 class="skills-titles">Lenguajes de programación</h3>
             <div class="skills-lenguajes">
-                <figure class="imagen-logo"><img src="imagenes/Logos/python.svg" alt="logo python" ></figure>
+                <figure name="python" class="imagen-logo"><img src="imagenes/Logos/python.svg" alt="logo python" ></figure>
                 <figure class="imagen-logo"><img src="imagenes/Logos/html-5.svg" alt="logo html"></figure>
                 <figure class="imagen-logo"><img src="imagenes/Logos/css-3.svg" alt="logo css"></figure>
                 <figure class="imagen-logo"><img src="imagenes/Logos/bash-icon.svg" alt="logo bash"></figure>
