@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
 
-  // Panel Lateral
-  var link = document.querySelectorAll(".menu")
+  // Menú Panel Lateral
+  var link = document.querySelectorAll(".panel-menu")
 
   function cambio(){
 
