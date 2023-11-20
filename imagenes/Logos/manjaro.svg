@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-    <title>Manjaro</title>
-    <g>
-        <path d="M256,4.06799356e-06 L256,256.000004 L181.075279,256.000004 L181.075279,4.06799356e-06 L256,4.06799356e-06 Z M165.459633,90.5359552 L165.459633,256.000027 L90.5349112,256.000027 L90.5349112,90.5359552 L165.459633,90.5359552 Z M165.460901,0 L165.460901,74.9247224 L74.6704761,74.9247224 L74.6704761,256.000023 L0,256.000023 L0,0 L165.460901,0 Z" fill="#35BF5C"></path>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="0px" viewBox="0 0 192 192" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(20.784314%,74.901961%,36.078431%);fill-opacity:1;" d="M 192 0 L 192 192 L 135.804688 192 L 135.804688 0 Z M 124.09375 67.902344 L 124.09375 192 L 67.902344 192 L 67.902344 67.902344 Z M 124.09375 0 L 124.09375 56.195312 L 56.003906 56.195312 L 56.003906 192 L 0 192 L 0 0 Z M 124.09375 0 "/>
+</g>
 </svg>

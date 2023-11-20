@@ -1,8 +1,13 @@
 /* ----------------------------------------------------- GUScode | Portafolio */
 @font-face {
     font-family: 'Open Sans';
-    src: url('/Styles/fuentes/OpenSans.ttf') format('ttf');
+    src: url('Fuente/OpenSans-Regular.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('Fuente/FiraCodeNerdFont-Regular.ttf') format('truetype');
+  }
 
 :root {
     /* Paleta de colores */
@@ -18,6 +23,7 @@
 
     /* fuentes - 2 fuentes */
     --fuente-1: 'Open Sans', sans-serif; 
+    --fuente-2: 'Fira Code';
 }
 
 * {
@@ -31,6 +37,10 @@ body { background-color: var(--body); }
 
 a { text-decoration: none; }
 
+.fc::before {
+    font-family: var(--fuente-2);
+    content: "";
+}
 
 /* Líneas de separación entre secciones */
 .linea {
@@ -144,15 +154,6 @@ a { text-decoration: none; }
 }
 
 
-button {
-    background-color: var(--cyan);
-    margin-top: 5%;
-    padding: 7px 15px;
-    color: var(--panel);
-    border-radius: 5px;
-    border: none;
-
-}
 
 .curriculo {
     display:inline-block;
@@ -200,13 +201,16 @@ button {
 
 .boton-redes {
     background-color: var(--body);
+    border-color: var(--body);
     border-radius: 50%;
+    border: none;
     margin-right: 10px;
     padding: 10px 13px;
 }
 
 .boton-redes:hover {
     background-color: var(--panel);
+    border-color: none;
 }
 
 .ph {
@@ -246,7 +250,6 @@ button {
     margin-left: 260px;
     justify-content: center;
     flex-wrap: wrap;
-    border-radius: 3px;
 }
   
 .contenedor-imagenes .imagen {
@@ -311,9 +314,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
     width: 40%;
     height: 30%;
+}
+
+.etiqueta p {
+    margin: 0;
 }
 
 .etiqueta img {
@@ -322,7 +329,71 @@ button {
 }
 
 .github {
-    margin-top: 15px;
+    background-color: var(--body);
+    border-color: var(--body);
+    border-radius: 50%;
+    border: none;
+    margin: 20px 40px;
+    padding: 10px 13px;
+}
+
+.github:hover {
+    background-color: var(--panel);
+    border-color: none;
+}
+
+.espacio {
+    display: inline-block;
+    width: 40px;
+    margin: 0;
+}
+
+.nf-python::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "󰌠";
+    color: var(--green);
+    background-color: var(--panel);
+}
+
+.nf-sqlite::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--cyan);
+    background-color: var(--panel);
+}
+
+.nf-bash::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--salmon);
+    background-color: var(--panel);
+}
+
+.nf-django::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--green);
+    background-color: var(--panel);
+}
+
+.nf-html::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--salmon);
+    background-color: var(--panel);
+}
+
+.nf-css::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--cyan);
+    background-color: var(--panel);
 }
 
 
@@ -345,6 +416,7 @@ button {
 }
 
 
+
 /* --------------------------------------------------------- Sección | Skills */
 
 .skills-lista {
@@ -355,42 +427,16 @@ button {
     margin-top: 40px;
 }
 
-.skills-lenguajes {
+.skills-logos {
     display: flex;
-    width: 50%;
     flex-wrap: wrap;
 }
 
-.skills-frameworks {
-    display: flex;
-    width: 30%;
-    flex-wrap: wrap;
-}
-
-.skills-herramientas {
-    display: flex;
-    width: 60%;
-    flex-wrap: wrap;
-}
-
-.skills-lenguajes .imagen-logo {
+.skills-logos .imagen-logo {
     position: relative;
-    height: 50px;
+    height: 45px;
     margin: 15px;
 }
-
-.skills-frameworks .imagen-logo {
-    position: relative;
-    height: 50px;
-    margin: 15px;
-}
-
-.skills-herramientas .imagen-logo {
-    position: relative;
-    height: 50px;
-    margin: 15px;
-}
-
 
 .imagen-logo img {
     position: relative;
@@ -403,7 +449,16 @@ button {
     filter: drop-shadow(2px 2px 4px var(--fuente));
 }
 
+
+
 /* ------------------------------------------------------- Sección | Contacto */
+
+.contacto-redes {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    list-style-type: none;
+}
 
 span {
     background-color: var(--body);
@@ -418,7 +473,8 @@ span {
       width: 95%; 
     }
 }
-  
+
+/* ------------------------------- media-querys | Tablets */
 @media screen and (max-width:700px){
     .contenedor-imagenes { 
       width: 90%; 
@@ -428,7 +484,8 @@ span {
       width: 48%; 
     }
 }
-  
+
+/* --------------------------- media-querys | Smartphones */
 @media screen and (max-width:450px){
     .top { 
         display: flex;
@@ -445,6 +502,7 @@ span {
         margin: 20px auto; 
     }
     
+    /* Sección | Proyectos */
     .contenedor-imagenes {
       width: 98%;
     }
@@ -458,7 +516,7 @@ span {
         margin: 15px 5px 5px 5px;
     }
 
-    /* ------------------------------------- Sección | Skills */
+    /* Sección | Capacitaciones */
     .linea-2 {
         width: 100%;
     }
@@ -466,6 +524,14 @@ span {
     .texto-movil {
         font-size: .8em;
     }
-    
 
+    /* Sección | Skills */
+    .skills-lista {
+        margin-left: 0;
+    }
+
+    .skills-logos .imagen-logo {
+        height: 30px;
+        margin: 7px;
+    }    
 }
