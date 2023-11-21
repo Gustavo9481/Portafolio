@@ -55,6 +55,228 @@ a { text-decoration: none; }
 }
 
 
+/* ----------------------------------------------------------- Íconos y Logos */
+.nf-download::before {
+    font-family: var(--fuente-2);
+    content: "󱑤";
+    font-size: 1.5em;
+    color: var(--body);
+    background-color: var(--cyan);
+}
+
+
+.nf-python::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "󰌠";
+    color: var(--green);
+    background-color: transparent;
+}
+
+.nf-sqlite::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--cyan);
+    background-color: transparent;
+}
+
+.nf-bash::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--fuente);
+    background-color: transparent;
+}
+
+.nf-django::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--green);
+    background-color: transparent;
+}
+
+.nf-html::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--salmon);
+    background-color: transparent;
+}
+
+.nf-css::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--cyan);
+    background-color: transparent;
+}
+
+.nf-flask::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--fuente);
+    background-color: transparent;
+}
+
+.nf-vscode::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "󰨞";
+    color: var(--cyan);
+    background-color: transparent;
+}
+
+.nf-vim::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--green);
+    background-color: transparent;
+}
+
+.nf-notion::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "󰰒";
+    color: var(--fuente);
+    background-color: transparent;
+}
+
+.nf-git::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--salmon);
+    background-color: transparent;
+}
+
+.nf-github::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--purple);
+    background-color: transparent;
+}
+
+.nf-js::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--yellow);
+    background-color: transparent;
+}
+
+.nf-fluter::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "󰬍";
+    color: var(--cyan);
+    background-color: transparent;
+}
+
+.nf-react::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--cyan);
+    background-color: transparent;
+}
+
+.nf-docker::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "󰡨";
+    color: var(--cyan);
+    background-color: transparent;
+}
+
+.nf-manjaro::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "󱘊";
+    color: var(--green);
+    background-color: transparent;
+}
+
+.nf-mail::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--fuente);
+    background-color: transparent;
+}
+
+.nf-phone::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "";
+    color: var(--green);
+    background-color: transparent;
+}
+
+.nf-certificado::before {
+    font-family: var(--fuente-2);
+    font-size: 2em;
+    content: "󱆈";
+    background-color: transparent;
+}
+
+.c1 {
+    color: var(--salmon);
+}
+
+.c2 {
+    color: var(--cyan);
+}
+
+.ph {
+    font-size: 2em;
+}
+
+.ph-github-logo {
+    color: var(--purple);
+}
+
+.ph-whatsapp-logo {
+    color: var(--green);
+}
+
+.ph-instagram-logo {
+    color: var(--salmon);
+}
+
+.ph-linkedin-logo {
+    color: var(--cyan);
+}
+
+/* Colores para texto e íconos de tarjetas de proyectos */
+.task {
+    color: var(--task);
+}
+
+.usuario {
+    color: var(--cyan);
+}
+
+.django {
+    color: var(--green);
+}
+
+.link {
+    color: var(--salmon);
+}
+
+.ph-check-circle,
+.ph-calculator,
+.ph-user-circle-plus,
+.bxl-django {
+    font-size: 0.9em;
+}
+
+
 /* ------------------------------------------------------------ Panel Lateral */
 
 .top {
@@ -159,29 +381,26 @@ a { text-decoration: none; }
     display:inline-block;
     background-color: var(--cyan);
     width: 180px;
-    height: 40px;
+    height: 30px;
     margin-top: 10px;
-    padding-top: 5px;
+    padding: 5px;
     text-align: center;
     border-radius: 5px;
     vertical-align: middle;
     color: var(--body);
 }
 
-.curriculo .ph {
-    vertical-align: text-bottom;
-    color: var(--body);
-}
+
 
 .curriculo:hover {
     background-color: var(--panel);
     color: var(--cyan);
 }
 
-.curriculo:hover .ph {
+.curriculo:hover .nf-download::before {
     color: var(--cyan);
+    background-color: var(--panel);
 }
-
 
 .inicio-redes {
     margin: 40px auto 15% auto;
@@ -213,25 +432,7 @@ a { text-decoration: none; }
     border-color: none;
 }
 
-.ph {
-    font-size: 2em;
-}
 
-.ph-github-logo {
-    color: var(--purple);
-}
-
-.ph-whatsapp-logo {
-    color: var(--green);
-}
-
-.ph-instagram-logo {
-    color: var(--salmon);
-}
-
-.ph-linkedin-logo {
-    color: var(--cyan);
-}
 
 
 
@@ -286,29 +487,7 @@ a { text-decoration: none; }
     text-align: center;
 }
 
-/* Colores para texto e íconos de tarjetas de proyectos */
-.task {
-    color: var(--task);
-}
 
-.usuario {
-    color: var(--cyan);
-}
-
-.django {
-    color: var(--green);
-}
-
-.link {
-    color: var(--salmon);
-}
-
-.ph-check-circle,
-.ph-calculator,
-.ph-user-circle-plus,
-.bxl-django {
-    font-size: 0.9em;
-}
 
 .etiqueta {
     display: flex;
@@ -348,56 +527,6 @@ a { text-decoration: none; }
     margin: 0;
 }
 
-.nf-python::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "󰌠";
-    color: var(--green);
-    background-color: var(--panel);
-}
-
-.nf-sqlite::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--cyan);
-    background-color: var(--panel);
-}
-
-.nf-bash::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--salmon);
-    background-color: var(--panel);
-}
-
-.nf-django::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--green);
-    background-color: var(--panel);
-}
-
-.nf-html::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--salmon);
-    background-color: var(--panel);
-}
-
-.nf-css::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--cyan);
-    background-color: var(--panel);
-}
-
-
-
 /* ------------------------------------------------- Sección | Capacitaciones */
 
 .capacitaciones-item {
@@ -414,6 +543,16 @@ a { text-decoration: none; }
     height: 2px;
     background-color: var(--panel);
 }
+
+.certificacion {
+    background-color: var(--panel);
+    width: fit-content;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
 
 
 
@@ -436,6 +575,15 @@ a { text-decoration: none; }
     position: relative;
     height: 45px;
     margin: 15px;
+}
+.skills-logos-box {
+    width: 70px;
+    text-align: center;
+}
+
+.skills-logos-box-p {
+    font-family: var(--fuente-2);
+    font-size: .7em;
 }
 
 .imagen-logo img {
@@ -464,7 +612,9 @@ span {
     background-color: var(--body);
 }
 
-
+.fuente-contacto {
+    font-family: var(--fuente-2);
+}
 
 /* ------------------------------------------------------------- Media Querys */
 
