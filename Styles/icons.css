@@ -1,0 +1,147 @@
+/* ----------------------------------------------------- GUScode | Portafolio */
+
+/* Caracteres especiales e íconos */
+.nf-1 {
+    font-family: var(--fuente-2);
+    font-size: var(--text-size-2);
+    background-color: transparent;
+}
+
+.nf-2 {
+    font-family: var(--fuente-2);
+    font-size: var(--text-size-3);
+    background-color: transparent;
+}
+
+.ico-download::before {
+    content: "󱑤";
+    color: var(--body);
+}
+
+.ico-python::before {
+    content: "󰌠";
+    color: var(--green);
+}
+
+.ico-sqlite::before {
+    content: "";
+    color: var(--cyan);
+}
+
+.ico-bash::before {
+    content: "";
+    color: var(--fuente);
+}
+
+.ico-django::before {
+    content: "";
+    color: var(--green);
+}
+
+.ico-html::before {
+    content: "";
+    color: var(--salmon);
+}
+
+.ico-css::before {
+    content: "";
+    color: var(--cyan);
+}
+
+.ico-flask::before {
+    content: "";
+    color: var(--fuente);
+}
+
+.ico-vscode::before {
+    content: "󰨞";
+    color: var(--cyan);
+}
+
+.ico-vim::before {
+    content: "";
+    color: var(--green);
+}
+
+.ico-notion::before {
+    content: "󰰒";
+    color: var(--fuente);
+}
+
+.ico-git::before {
+    content: "";
+    color: var(--salmon);
+}
+
+.ico-github::before {
+    content: "";
+    color: var(--purple);
+}
+
+.ico-js::before {
+    content: "";
+    color: var(--yellow);
+}
+
+.ico-flutter::before {
+    content: "󰬍";
+    color: var(--cyan);
+}
+
+.ico-react::before {
+    content: "";
+    color: var(--cyan);
+}
+
+.ico-docker::before {
+    content: "󰡨";
+    color: var(--cyan);
+}
+
+.ico-manjaro::before {
+    content: "󱘊";
+    color: var(--green);
+}
+
+.ico-mail::before {
+    content: "";
+    color: var(--fuente);
+}
+
+.ico-phone::before {
+    content: "";
+    color: var(--green);
+}
+
+.ico-titulo::before {
+    content: "󱆈";
+    color: var(--cyan);
+}
+
+.ico-certificado::before {
+    content: "󱆈";
+    color: var(--salmon);
+}
+
+
+
+/* Íconos redes - PhosphorIcons */
+.ph {
+    font-size: var(--text-size-2);
+}
+
+.ph-github-logo {
+    color: var(--purple);
+}
+
+.ph-whatsapp-logo {
+    color: var(--green);
+}
+
+.ph-instagram-logo {
+    color: var(--salmon);
+}
+
+.ph-linkedin-logo {
+    color: var(--cyan);
+}

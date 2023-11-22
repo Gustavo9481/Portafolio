@@ -7,9 +7,10 @@
 @font-face {
     font-family: 'Fira Code';
     src: url('Fuente/FiraCodeNerdFont-Regular.ttf') format('truetype');
-  }
+}
 
 :root {
+
     /* Paleta de colores */
     --salmon: hsla(14, 88%, 80%, 1);
     --yellow: hsla(53, 82%, 69%, 1);
@@ -24,6 +25,12 @@
     /* fuentes - 2 fuentes */
     --fuente-1: 'Open Sans', sans-serif; 
     --fuente-2: 'Fira Code';
+    --text-size-1: 2.3em;
+    --text-size-2: 2em;
+    --text-size-3: 1.5em;
+    --text-size-4: 1em;
+    --text-size-5: 0.9em;
+    
 }
 
 * {
@@ -37,17 +44,20 @@ body { background-color: var(--body); }
 
 a { text-decoration: none; }
 
-.fc::before {
-    font-family: var(--fuente-2);
-    content: "";
-}
 
 /* Líneas de separación entre secciones */
-.linea {
+.linea-1 {
     width: 100%;
     height: 5px;
     background-color: var(--panel);
 }
+
+.linea-2 {
+    width: 80%;
+    height: 2px;
+    background-color: var(--panel);
+}
+
 
 /* Contenedores de Secciones */
 .section-box {
@@ -55,202 +65,7 @@ a { text-decoration: none; }
 }
 
 
-/* ----------------------------------------------------------- Íconos y Logos */
-.nf-download::before {
-    font-family: var(--fuente-2);
-    content: "󱑤";
-    font-size: 1.5em;
-    color: var(--body);
-    background-color: var(--cyan);
-}
 
-
-.nf-python::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "󰌠";
-    color: var(--green);
-    background-color: transparent;
-}
-
-.nf-sqlite::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--cyan);
-    background-color: transparent;
-}
-
-.nf-bash::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--fuente);
-    background-color: transparent;
-}
-
-.nf-django::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--green);
-    background-color: transparent;
-}
-
-.nf-html::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--salmon);
-    background-color: transparent;
-}
-
-.nf-css::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--cyan);
-    background-color: transparent;
-}
-
-.nf-flask::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--fuente);
-    background-color: transparent;
-}
-
-.nf-vscode::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "󰨞";
-    color: var(--cyan);
-    background-color: transparent;
-}
-
-.nf-vim::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--green);
-    background-color: transparent;
-}
-
-.nf-notion::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "󰰒";
-    color: var(--fuente);
-    background-color: transparent;
-}
-
-.nf-git::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--salmon);
-    background-color: transparent;
-}
-
-.nf-github::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--purple);
-    background-color: transparent;
-}
-
-.nf-js::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--yellow);
-    background-color: transparent;
-}
-
-.nf-fluter::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "󰬍";
-    color: var(--cyan);
-    background-color: transparent;
-}
-
-.nf-react::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--cyan);
-    background-color: transparent;
-}
-
-.nf-docker::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "󰡨";
-    color: var(--cyan);
-    background-color: transparent;
-}
-
-.nf-manjaro::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "󱘊";
-    color: var(--green);
-    background-color: transparent;
-}
-
-.nf-mail::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--fuente);
-    background-color: transparent;
-}
-
-.nf-phone::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "";
-    color: var(--green);
-    background-color: transparent;
-}
-
-.nf-certificado::before {
-    font-family: var(--fuente-2);
-    font-size: 2em;
-    content: "󱆈";
-    background-color: transparent;
-}
-
-.c1 {
-    color: var(--salmon);
-}
-
-.c2 {
-    color: var(--cyan);
-}
-
-.ph {
-    font-size: 2em;
-}
-
-.ph-github-logo {
-    color: var(--purple);
-}
-
-.ph-whatsapp-logo {
-    color: var(--green);
-}
-
-.ph-instagram-logo {
-    color: var(--salmon);
-}
-
-.ph-linkedin-logo {
-    color: var(--cyan);
-}
 
 /* Colores para texto e íconos de tarjetas de proyectos */
 .task {
@@ -273,7 +88,7 @@ a { text-decoration: none; }
 .ph-calculator,
 .ph-user-circle-plus,
 .bxl-django {
-    font-size: 0.9em;
+    font-size: var(--text-size-5);
 }
 
 
@@ -391,15 +206,13 @@ a { text-decoration: none; }
 }
 
 
-
 .curriculo:hover {
     background-color: var(--panel);
     color: var(--cyan);
 }
 
-.curriculo:hover .nf-download::before {
+.curriculo:hover .ico-download::before {
     color: var(--cyan);
-    background-color: var(--panel);
 }
 
 .inicio-redes {
@@ -538,11 +351,6 @@ a { text-decoration: none; }
     font-size: 0.7em;
 }
 
-.linea-2 {
-    width: 80%;
-    height: 2px;
-    background-color: var(--panel);
-}
 
 .certificacion {
     background-color: var(--panel);
@@ -614,74 +422,4 @@ span {
 
 .fuente-contacto {
     font-family: var(--fuente-2);
-}
-
-/* ------------------------------------------------------------- Media Querys */
-
-@media screen and (max-width:1000px){
-    .contenedor-imagenes { 
-      width: 95%; 
-    }
-}
-
-/* ------------------------------- media-querys | Tablets */
-@media screen and (max-width:700px){
-    .contenedor-imagenes { 
-      width: 90%; 
-    }
-  
-    .contenedor-imagenes .imagen { 
-      width: 48%; 
-    }
-}
-
-/* --------------------------- media-querys | Smartphones */
-@media screen and (max-width:450px){
-    .top { 
-        display: flex;
-    }
-
-    .panel { display: none; }
-
-    .inicio-titulo {
-        font-size: 3em;
-        margin-top: 1em;
-    }
-
-    .section-box {
-        margin: 20px auto; 
-    }
-    
-    /* Sección | Proyectos */
-    .contenedor-imagenes {
-      width: 98%;
-    }
-  
-    .contenedor-imagenes .imagen {
-      width: 90%;
-      height: fit-content;
-    }
-
-    .overlay-content {
-        margin: 15px 5px 5px 5px;
-    }
-
-    /* Sección | Capacitaciones */
-    .linea-2 {
-        width: 100%;
-    }
-
-    .texto-movil {
-        font-size: .8em;
-    }
-
-    /* Sección | Skills */
-    .skills-lista {
-        margin-left: 0;
-    }
-
-    .skills-logos .imagen-logo {
-        height: 30px;
-        margin: 7px;
-    }    
 }

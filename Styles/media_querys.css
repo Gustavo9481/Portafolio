@@ -1,0 +1,70 @@
+/* ----------------------------------------------------- GUScode | Portafolio */
+/* Media Querys */
+
+@media screen and (max-width:1024px){
+    .contenedor-imagenes { 
+        width: 95%; 
+    }
+}
+
+/* ------------------------------- media-querys | Tablets */
+@media screen and (max-width:768px){
+    .contenedor-imagenes { 
+        width: 90%;  
+    }
+  
+    .contenedor-imagenes .imagen { 
+        width: 48%; 
+    }
+}
+
+/* --------------------------- media-querys | Smartphones */
+@media screen and (max-width:480px){
+    .top { 
+        display: flex;
+    }
+
+    .panel { display: none; }
+
+    .inicio-titulo {
+        font-size: 3em;
+        margin-top: 1em;
+    }
+
+    .section-box {
+        margin: 20px auto; 
+    }
+    
+    /* Sección | Proyectos */
+    .contenedor-imagenes {
+        width: 98%;
+    }
+  
+    .contenedor-imagenes .imagen {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .overlay-content {
+        margin: 15px 5px 5px 5px;
+    }
+
+    /* Sección | Capacitaciones */
+    .linea-2 {
+        width: 100%;
+    }
+
+    .texto-movil {
+        font-size: .8em;
+    }
+
+    /* Sección | Skills */
+    .skills-lista {
+        margin-left: 0;
+    }
+
+    .skills-logos .imagen-logo {
+        height: 30px;
+        margin: 7px;
+    }    
+}
