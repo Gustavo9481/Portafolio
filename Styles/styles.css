@@ -58,38 +58,11 @@ a { text-decoration: none; }
     background-color: var(--panel);
 }
 
-
 /* Contenedores de Secciones */
 .section-box {
     margin: 70px 0 70px 260px; 
 }
 
-
-
-
-/* Colores para texto e íconos de tarjetas de proyectos */
-.task {
-    color: var(--task);
-}
-
-.usuario {
-    color: var(--cyan);
-}
-
-.django {
-    color: var(--green);
-}
-
-.link {
-    color: var(--salmon);
-}
-
-.ph-check-circle,
-.ph-calculator,
-.ph-user-circle-plus,
-.bxl-django {
-    font-size: var(--text-size-5);
-}
 
 
 /* ------------------------------------------------------------ Panel Lateral */
@@ -338,6 +311,23 @@ a { text-decoration: none; }
     display: inline-block;
     width: 40px;
     margin: 0;
+}
+
+/* Colores para texto e íconos de tarjetas de proyectos */
+.task {
+    color: var(--task);
+}
+
+.usuario {
+    color: var(--cyan);
+}
+
+.django {
+    color: var(--green);
+}
+
+.link {
+    color: var(--salmon);
 }
 
 /* ------------------------------------------------- Sección | Capacitaciones */

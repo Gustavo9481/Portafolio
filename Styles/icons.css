@@ -145,3 +145,10 @@
 .ph-linkedin-logo {
     color: var(--cyan);
 }
+
+.ph-check-circle,
+.ph-calculator,
+.ph-user-circle-plus,
+.bxl-django {
+    font-size: var(--text-size-5);
+}
