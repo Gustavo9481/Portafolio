@@ -27,8 +27,8 @@
     .panel { display: none; }
 
     .inicio-titulo {
-        font-size: 3em;
-        margin-top: 1em;
+        font-size: var(--text-size-7);
+        margin-top: var(--text-size-4);
     }
 
     .section-box {

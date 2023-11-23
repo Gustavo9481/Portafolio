@@ -32,6 +32,8 @@
     --text-size-3: 1.5em;
     --text-size-4: 1em;
     --text-size-5: 0.9em;
+    --text-size-6: 4em;
+    --text-size-7: 3em;
     
 }
 
@@ -131,11 +133,23 @@ a { text-decoration: none; }
 }
 
 .panel-menu {
-    font-size: 1em;
+    font-size: var(--text-size-4);
 }
 
 .visitado {
     color: var(--cyan);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 
@@ -143,12 +157,13 @@ a { text-decoration: none; }
 /* --------------------------------------------------------- Sección | Inicio */
 
 .inicio-titulo {
-    font-size: 4em;
+    font-size: var(--text-size-6);
     font-weight: 400;
-    margin-top: 2.3em;
+    margin-top: var(--text-size-1);
 }
 .inicio-cursor {
     display:block;
+    font-size: var(--text-size-3);
     white-space: nowrap;
     border-right: 4px solid;
     width: 31ch;
@@ -337,8 +352,8 @@ a { text-decoration: none; }
 /* ------------------------------------------------- Sección | Capacitaciones */
 
 .capacitaciones-item {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: var(--text-size-7);
+    margin-bottom: var(--text-size-7);
 }
 
 .small {
