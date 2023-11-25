@@ -1,4 +1,5 @@
-/* ----------------------------------------------------- GUScode | Portafolio */
+/* + =>------------------------------------------------- GUScode | Portafolio */
+
 @font-face {
     font-family: 'Open Sans';
     src: url('Fuente/OpenSans-Regular.woff') format('woff');
@@ -13,7 +14,7 @@
 
 :root {
 
-    /* Paleta de colores */
+    /* + => Paleta de colores */
     --salmon: hsla(14, 88%, 80%, 1);
     --yellow: hsla(53, 82%, 69%, 1);
     --green: hsla(75, 55%, 60%, 1);
@@ -24,18 +25,22 @@
     --panel: hsla(220, 8%, 14%, 1);
     --task: hsla(54, 69%, 64%, 1);
 
-    /* fuentes - 2 fuentes */
+    /* + => fuentes - 2 fuentes */
     --fuente-1: 'Open Sans', sans-serif; 
     --fuente-2: 'Fira Code';
-    --text-size-1: 2.3em;
-    --text-size-2: 2em;
-    --text-size-3: 1.5em;
-    --text-size-4: 1em;
-    --text-size-5: 0.9em;
-    --text-size-6: 4em;
-    --text-size-7: 3em;
-    
+    --size-1: 2.3em;
+    --size-2: 2em;
+    --size-3: 1.5em;
+    --size-4: 1em;
+    --size-5: 0.9em;
+    --size-6: 4em;
+    --size-7: 3em;
+    --size-8: 0.7em;
+    /* task: organizar las dimensiones em */
+
+    --root-size: 1em;
 }
+
 
 * {
     font-family: var(--fuente-1);
@@ -52,19 +57,19 @@ a { text-decoration: none; }
 /* Líneas de separación entre secciones */
 .linea-1 {
     width: 100%;
-    height: 5px;
+    height: 0.3em;
     background-color: var(--panel);
 }
 
 .linea-2 {
     width: 80%;
-    height: 2px;
+    height: 0.1em;
     background-color: var(--panel);
 }
 
 /* Contenedores de Secciones */
 .section-box {
-    margin: 70px 0 70px 260px; 
+    margin: 3% 0 3% 19%; 
 }
 
 
@@ -76,14 +81,14 @@ a { text-decoration: none; }
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 160px;
+    height: 19%;
 }
 
 .top-avatar {
     display: block;
     margin: 5px auto;
-    height: 140px;
-    width: 140px;
+    height: 30%;
+    width: 50%;
     border-radius: 50%;
 }
 
@@ -95,7 +100,7 @@ a { text-decoration: none; }
     position: fixed;
     top: 0;
     left: 0;
-    width: 230px; 
+    width: 16%; 
     height: 100%;
 }
 
@@ -103,8 +108,8 @@ a { text-decoration: none; }
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 1.3em;
+    grid-row-gap: 1.3em;
     justify-items: stretch;
     align-items: stretch;
 }
@@ -113,8 +118,8 @@ a { text-decoration: none; }
     display: block;
     border-radius: 50%;
     margin: auto;
-    width: 150px;;
-    height: 150px;
+    width: 9.3em;;
+    height: 9.3em;
 }
 
 .panel-box-menu {
@@ -129,11 +134,11 @@ a { text-decoration: none; }
 }
 
 .panel-box-menu ul li {
-    padding-bottom: 7px;
+    padding-bottom: 0.5em;
 }
 
 .panel-menu {
-    font-size: var(--text-size-4);
+    font-size: var(--size-4);
 }
 
 .visitado {
@@ -157,13 +162,13 @@ a { text-decoration: none; }
 /* --------------------------------------------------------- Sección | Inicio */
 
 .inicio-titulo {
-    font-size: var(--text-size-6);
+    font-size: calc(var(--root-size) * 3.5);
     font-weight: 400;
-    margin-top: var(--text-size-1);
+    margin-top: var(--size-1);
 }
 .inicio-cursor {
     display:block;
-    font-size: var(--text-size-3);
+    font-size: var(--size-3);
     white-space: nowrap;
     border-right: 4px solid;
     width: 31ch;
@@ -180,21 +185,22 @@ a { text-decoration: none; }
     50% {border-color: transparent}
 }
 
-
+.parrafo {
+    line-height: var(--size-3);
+}
 
 .curriculo {
     display:inline-block;
     background-color: var(--cyan);
-    width: 180px;
-    height: 30px;
-    margin-top: 10px;
-    padding: 5px;
+    width: 11.25em;
+    height: 2em;
+    margin-top: 2%;
+    padding: 0.4em;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 0.5em;
     vertical-align: middle;
     color: var(--body);
 }
-
 
 .curriculo:hover {
     background-color: var(--panel);
@@ -206,7 +212,7 @@ a { text-decoration: none; }
 }
 
 .inicio-redes {
-    margin: 40px auto 15% auto;
+    margin: 3% auto 15% auto;
     list-style-type: none;
 }
 
@@ -218,16 +224,15 @@ a { text-decoration: none; }
 }
 
 .inicio-redes-lista li {
-    padding-right: 0px;
+    padding-right: 0;
 }
 
 .boton-redes {
     background-color: var(--body);
     border-radius: 100%;
     border: none;
-    margin-right: 10px;
+    margin-right: 5%;
     padding: 10px 13px;
-    transform: rotate(0deg);
 }
 
 .boton-redes:hover {
@@ -237,21 +242,13 @@ a { text-decoration: none; }
 
 
 
-
-
 /* ------------------------------------------------------ Sección | Proyectos */
-
-.proyectos {
-    margin-left: 260px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 .contenedor-imagenes {
     display: flex;
     width: 85%;
     margin: auto !important;
-    margin-left: 260px;
+    margin-left: 19%;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -260,7 +257,7 @@ a { text-decoration: none; }
     width: 45%;
     position: relative;
     height: 300px;
-    margin: 10px;
+    margin: 1%;
 }
   
 .imagen img {
@@ -286,11 +283,9 @@ a { text-decoration: none; }
 }
 
 .overlay-content {
-    margin: 50px 5px 5px 5px;
+    margin: 10% 1% 1% 1%;
     text-align: center;
 }
-
-
 
 .etiqueta {
     display: flex;
@@ -305,18 +300,13 @@ a { text-decoration: none; }
     margin: 0;
 }
 
-.etiqueta img {
-    height: 25px;
-    object-fit: fill;
-}
-
 .github {
     background-color: var(--body);
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: none;
-    margin: 20px 40px;
+    margin: var(--size-3) var(--size-1);
     padding: 10px 13px;  
 }
 
@@ -328,7 +318,7 @@ a { text-decoration: none; }
 
 .espacio {
     display: inline-block;
-    width: 40px;
+    width: var(--size-1);
     margin: 0;
 }
 
@@ -349,27 +339,28 @@ a { text-decoration: none; }
     color: var(--salmon);
 }
 
+
+
 /* ------------------------------------------------- Sección | Capacitaciones */
 
 .capacitaciones-item {
-    margin-top: var(--text-size-7);
-    margin-bottom: var(--text-size-7);
+    margin-top: var(--size-7);
+    margin-bottom: var(--size-7);
 }
 
 .small {
-    font-size: 0.7em;
+    font-size: var(--size-8);
 }
 
 
 .certificacion {
     background-color: var(--panel);
     width: fit-content;
-    height: 40px;
-    padding: 0 15px;
+    height: var(--size-7);
+    padding: 0 var(--size-4);
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: var(--size-5);
 }
-
 
 
 
@@ -380,7 +371,7 @@ a { text-decoration: none; }
 }
 
 .skills-titles {
-    margin-top: 40px;
+    margin-top: 5%;
 }
 
 .skills-logos {
@@ -388,30 +379,14 @@ a { text-decoration: none; }
     flex-wrap: wrap;
 }
 
-.skills-logos .imagen-logo {
-    position: relative;
-    height: 45px;
-    margin: 15px;
-}
 .skills-logos-box {
-    width: 70px;
+    width: var(--size-6);
     text-align: center;
 }
 
 .skills-logos-box-p {
     font-family: var(--fuente-2);
-    font-size: .7em;
-}
-
-.imagen-logo img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.imagen-logo img:hover {
-    filter: drop-shadow(2px 2px 4px var(--fuente));
+    font-size: var(--size-8);
 }
 
 
@@ -421,12 +396,8 @@ a { text-decoration: none; }
 .contacto-redes {
     display: flex;
     justify-content: center;
-    margin: 40px auto;
+    margin: auto;
     list-style-type: none;
-}
-
-span {
-    background-color: var(--body);
 }
 
 .fuente-contacto {

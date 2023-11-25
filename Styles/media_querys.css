@@ -1,6 +1,7 @@
 /* ----------------------------------------------------- GUScode | Portafolio */
 /* Media Querys */
 
+
 @media screen and (max-width:1024px){
     .contenedor-imagenes { 
         width: 95%; 
@@ -8,7 +9,25 @@
 }
 
 /* ------------------------------- media-querys | Tablets */
-@media screen and (max-width:768px){
+@media screen and (max-width:810px){
+    
+    .top {
+        display: flex;
+    }
+
+    .top-avatar {
+        width: 9.3em;;
+        height: 9.3em;
+    }
+
+    .panel {
+        display: none;
+    }
+    
+    .section-box {
+        margin: 2.5% 3%; 
+    }
+
     .contenedor-imagenes { 
         width: 90%;  
     }
@@ -27,8 +46,8 @@
     .panel { display: none; }
 
     .inicio-titulo {
-        font-size: var(--text-size-7);
-        margin-top: var(--text-size-4);
+        font-size: var(--size-7);
+        margin-top: var(--size-4);
     }
 
     .section-box {
@@ -55,7 +74,7 @@
     }
 
     .texto-movil {
-        font-size: .8em;
+        font-size: 0.8em;
     }
 
     /* Sección | Skills */

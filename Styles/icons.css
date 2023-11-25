@@ -3,13 +3,13 @@
 /* Caracteres especiales e íconos */
 .nf-1 {
     font-family: var(--fuente-2);
-    font-size: var(--text-size-2);
+    font-size: var(--size-2);
     background-color: transparent;
 }
 
 .nf-2 {
     font-family: var(--fuente-2);
-    font-size: var(--text-size-3);
+    font-size: var(--size-3);
     background-color: transparent;
 }
 
@@ -147,7 +147,7 @@
 
 /* Íconos redes - PhosphorIcons */
 .ph {
-    font-size: var(--text-size-2);
+    font-size: var(--size-2);
 }
 
 .ph-github-logo {
@@ -170,5 +170,5 @@
 .ph-calculator,
 .ph-user-circle-plus,
 .bxl-django {
-    font-size: var(--text-size-5);
+    font-size: var(--size-5);
 }
