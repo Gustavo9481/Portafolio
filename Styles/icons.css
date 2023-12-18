@@ -108,8 +108,8 @@
     color: var(--cyan);
 }
 
-.ico-react::before {
-    content: "";
+.ico-cobol::before {
+    content: "󰯳";
     color: var(--cyan);
 }
 
