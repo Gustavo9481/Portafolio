@@ -13,6 +13,11 @@
     background-color: transparent;
 }
 
+.ico-user::before {
+    content: "";
+    color: var(--fuente);
+}
+
 .ico-whatsapp::before {
     content: "";
     color: var(--green);
@@ -143,6 +148,10 @@
     color: var(--salmon);
 }
 
+.ico-rust::before {
+    content: "󱘗";
+    color: var(--salmon)
+}
 
 
 /* Íconos redes - PhosphorIcons */
@@ -166,6 +175,11 @@
     color: var(--cyan);
 }
 
+.ph-youtube-logo {
+    color: var(--salmon)
+}
+
+.ph-user,
 .ph-check-circle,
 .ph-calculator,
 .ph-user-circle-plus,
